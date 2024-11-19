@@ -28,15 +28,18 @@ source /opt/ros/foxy/setup.bash
 ## Create a ROS2 workspace as follows 
 mkdir -p ros2_ws/src
 cd ros2_ws/src 
-git clone https://github.com/splion-360/peer-robotics.git
+git clone https://github.com/splion-360/peer-robotics.git .
 cd ..
 colcon build 
 
 ## Download the model weights to start inference. 
-cd ros2_ws/src/seg
+cd src/seg
 ./setup.sh ## Will create two folders inside the /seg directory and will download the model weights. Make sure that the model weights are correctly downloaded
 
 ```
+
+## Download weights 
+Navigate to the `src/seg/seg/weights` folder and place the pretrained weights. The weights can be downloaded [here](https://drive.google.com/file/d/1V0Ax7RgARmh00KV3CjMrs1TXdk3zrDib/view?usp=sharing) 
 
 ## Inference
 Once the model weights are downloaded, navigate to the root of the workspace and launch the ROS2 nodes. 

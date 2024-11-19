@@ -36,6 +36,11 @@ cd ros2_ws/src/bbox
 
 ```
 
+## Download weights 
+Navigate to the `src/bbox/bbox/weights` folder and place the pretrained weights. The weights can be downloaded [here](https://drive.google.com/file/d/13NHccIt-mt-Jmsx1Dwe34q1tS3qJwaCS/view?usp=sharing)
+
+
+
 ## Inference
 Once the model weights are downloaded, navigate to the root of the workspace and launch the ROS2 nodes. 
 ```
