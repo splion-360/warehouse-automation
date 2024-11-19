@@ -1,5 +1,5 @@
 # Object detection using bounding box 
-The second task required detecting warehouse pallets in the scene, with a specific focus on pallet bases. I utilized YOLOv3 for this task due to its simplicity, strikes a balance between speed and accuracy, making it particularly suitable for real-time applications. It employs a single convolutional neural network to predict bounding boxes and class probabilities directly from full images, enabling faster inference. The training results are summarized below:
+The second task required detecting warehouse pallets in the scene, with focus on pallet bases. I utilized [YOLOv3](https://arxiv.org/abs/1804.02767) for this task due to its simplicity, striking a balance between speed and accuracy, making it particularly suitable for real-time applications. It employs a single convolutional neural network to predict bounding boxes and class probabilities directly from images. Initially, I implemented the network from scratch but could not achieve the desired mAP. To address this, I forked the network implementation from [here](https://github.com/ultralytics/yolov3). The training results are summarized below:
 
 `NOTE: All the results were aggregated after training for 200 epochs`
 
