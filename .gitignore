@@ -1,0 +1,6 @@
+bbox/bbox/weights/*
+seg/seg/weights/*
+seg/test/*
+seg/resource/*
+bbox/test/*
+bbox/resource/*
