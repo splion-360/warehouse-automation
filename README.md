@@ -7,7 +7,7 @@ The objective of this assignment is to perform real-time image segmentation and 
 - [Semantic Segmentation inference](./seg/README.md)
 
 
-## Custom Training 
+<!-- ## Custom Training 
 ### Segmentation
 The repo contains scripts to reproduce results and to perform training on custom dataset. To get started, 
 
@@ -24,4 +24,4 @@ Two implementations of Yolov3 is contained inside the `object-detection` folder.
 ```
 TODO: to be filled later
 ```
-`NOTE: The setup is still incomplete and will try to push the changes ASAP`
+`NOTE: The setup is still incomplete and will try to push the changes ASAP` -->
