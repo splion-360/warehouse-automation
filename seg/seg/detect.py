@@ -10,7 +10,7 @@ from seg.model import SegNet
 from seg.utils import get_transforms
 import seg.cfg as cfg
 import yaml
-
+from collections import OrderedDict
 
 ## Get the path info from yaml 
 def load_config(cfg_file : str):
@@ -38,12 +38,12 @@ class ObjectSegmentation(Node):
                                                     '/camera/image_raw',
                                                     self.image_callback, 
                                                     10)
-        self.weights = os.path.join(cfg.ROOT, 'weights')
+        weights_path = os.path.join(cfg.ROOT, 'weights')
         self.device = cfg.DEVICE
         
         ## Step 1: Model initialisation and model loading 
         self.model = SegNet(cfg.IMG['IN_CHANNELS'], cfg.IMG['OUT_CHANNELS'])
-        self.load_model(self.weights)
+        self.load_model(weights_path)
         self.model.to(self.device)
 
         ## Build a subscriber node to Image stream
@@ -71,11 +71,15 @@ class ObjectSegmentation(Node):
             self.image_publisher_viz.publish(detection_img)
 
     def load_model(self, weight_path):
-        self.get_logger().info('Loading model weights from {}'.format(weight_path))
+        state_dict = OrderedDict()
+        print('Loading model weights from {}'.format(weight_path))
         last_weight = os.path.join(weight_path, "best.pt")
         chkpt = torch.load(last_weight, map_location = self.device)
-        self.model.load_state_dict(chkpt['model'])
-        del chkpt
+        for key in chkpt['model'].keys():
+            if 'vgg' not in key:
+                state_dict[key] = chkpt['model'][key]
+        self.model.load_state_dict(state_dict)
+        del chkpt, state_dict
     
     def infer(self, img : np.ndarray) -> np.ndarray:
         self.model.eval()

@@ -73,7 +73,7 @@ class SegNet(nn.Module):
                          512, 512, 512, 
                          512, 512, 512]
         
-        self.vgg16 = torchvision.models.vgg16(pretrained = True)
+        
         self.encoder = nn.ModuleList()
         
         self.encoder.append(Encoder(in_channels, encoder_dims[:2]))
@@ -100,36 +100,37 @@ class SegNet(nn.Module):
         
         
     def init_vgg16(self): 
-        self.encoder[0].layers[0].conv.weight.data = self.vgg16.features[0].weight.data
-        self.encoder[0].layers[0].conv.bias.data = self.vgg16.features[0].bias.data
-        self.encoder[0].layers[1].conv.weight.data = self.vgg16.features[2].weight.data
-        self.encoder[0].layers[1].conv.bias.data = self.vgg16.features[2].bias.data
+        vgg16 = torchvision.models.vgg16(pretrained = True)
+        self.encoder[0].layers[0].conv.weight.data = vgg16.features[0].weight.data
+        self.encoder[0].layers[0].conv.bias.data = vgg16.features[0].bias.data
+        self.encoder[0].layers[1].conv.weight.data = vgg16.features[2].weight.data
+        self.encoder[0].layers[1].conv.bias.data = vgg16.features[2].bias.data
         
-        self.encoder[1].layers[0].conv.weight.data = self.vgg16.features[5].weight.data
-        self.encoder[1].layers[0].conv.bias.data = self.vgg16.features[5].bias.data
-        self.encoder[1].layers[1].conv.weight.data = self.vgg16.features[7].weight.data
-        self.encoder[1].layers[1].conv.bias.data = self.vgg16.features[7].bias.data
+        self.encoder[1].layers[0].conv.weight.data = vgg16.features[5].weight.data
+        self.encoder[1].layers[0].conv.bias.data = vgg16.features[5].bias.data
+        self.encoder[1].layers[1].conv.weight.data = vgg16.features[7].weight.data
+        self.encoder[1].layers[1].conv.bias.data = vgg16.features[7].bias.data
         
-        self.encoder[2].layers[0].conv.weight.data = self.vgg16.features[10].weight.data
-        self.encoder[2].layers[0].conv.bias.data = self.vgg16.features[10].bias.data
-        self.encoder[2].layers[1].conv.weight.data = self.vgg16.features[12].weight.data
-        self.encoder[2].layers[1].conv.bias.data = self.vgg16.features[12].bias.data
-        self.encoder[2].layers[2].conv.weight.data = self.vgg16.features[14].weight.data
-        self.encoder[2].layers[2].conv.bias.data = self.vgg16.features[14].bias.data
+        self.encoder[2].layers[0].conv.weight.data = vgg16.features[10].weight.data
+        self.encoder[2].layers[0].conv.bias.data = vgg16.features[10].bias.data
+        self.encoder[2].layers[1].conv.weight.data = vgg16.features[12].weight.data
+        self.encoder[2].layers[1].conv.bias.data = vgg16.features[12].bias.data
+        self.encoder[2].layers[2].conv.weight.data = vgg16.features[14].weight.data
+        self.encoder[2].layers[2].conv.bias.data = vgg16.features[14].bias.data
         
-        self.encoder[3].layers[0].conv.weight.data = self.vgg16.features[17].weight.data
-        self.encoder[3].layers[0].conv.bias.data = self.vgg16.features[17].bias.data
-        self.encoder[3].layers[1].conv.weight.data = self.vgg16.features[19].weight.data
-        self.encoder[3].layers[1].conv.bias.data = self.vgg16.features[19].bias.data
-        self.encoder[3].layers[2].conv.weight.data = self.vgg16.features[21].weight.data
-        self.encoder[3].layers[2].conv.bias.data = self.vgg16.features[21].bias.data
+        self.encoder[3].layers[0].conv.weight.data = vgg16.features[17].weight.data
+        self.encoder[3].layers[0].conv.bias.data = vgg16.features[17].bias.data
+        self.encoder[3].layers[1].conv.weight.data = vgg16.features[19].weight.data
+        self.encoder[3].layers[1].conv.bias.data = vgg16.features[19].bias.data
+        self.encoder[3].layers[2].conv.weight.data = vgg16.features[21].weight.data
+        self.encoder[3].layers[2].conv.bias.data = vgg16.features[21].bias.data
         
-        self.encoder[4].layers[0].conv.weight.data = self.vgg16.features[24].weight.data
-        self.encoder[4].layers[0].conv.bias.data = self.vgg16.features[24].bias.data
-        self.encoder[4].layers[1].conv.weight.data = self.vgg16.features[26].weight.data
-        self.encoder[4].layers[1].conv.bias.data = self.vgg16.features[26].bias.data
-        self.encoder[4].layers[2].conv.weight.data = self.vgg16.features[28].weight.data
-        self.encoder[4].layers[2].conv.bias.data = self.vgg16.features[28].bias.data
+        self.encoder[4].layers[0].conv.weight.data = vgg16.features[24].weight.data
+        self.encoder[4].layers[0].conv.bias.data = vgg16.features[24].bias.data
+        self.encoder[4].layers[1].conv.weight.data = vgg16.features[26].weight.data
+        self.encoder[4].layers[1].conv.bias.data = vgg16.features[26].bias.data
+        self.encoder[4].layers[2].conv.weight.data = vgg16.features[28].weight.data
+        self.encoder[4].layers[2].conv.bias.data = vgg16.features[28].bias.data
         
     def forward(self, x): 
         out = nn.Sequential(*self.encoder)(x)
