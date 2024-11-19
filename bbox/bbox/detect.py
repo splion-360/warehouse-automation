@@ -25,7 +25,6 @@ class ObjectDetection(Node):
     def __init__(self, name = 'bounding_box'):
         super().__init__(name)
         rclpy.logging.set_logger_level(name, rclpy.logging.LoggingSeverity.INFO)
-        self.config = load_config(os.path.join(cfg.ROOT, 'bag/metadata.yaml'))['rosbag2_bagfile_information']
         self.weights = os.path.join(cfg.ROOT, 'weights', 'best.pt')
         self.device  = cfg.DATA["DEVICE"]
         self.imgsz   = cfg.DATA["IMG_SIZE"]
@@ -34,23 +33,28 @@ class ObjectDetection(Node):
         self.classes = cfg.DATA["CLASSES"]
         self.agnostic_nms = False
         self.max_det = cfg.TEST["MAX_DET"]
-        topic_of_interest = self.config['topics_with_message_count'][1]['topic_metadata']['name']
-        self.get_logger().info(topic_of_interest)
+
+        try: 
+            self.config = load_config(os.path.join(cfg.ROOT, 'bag/metadata.yaml'))['rosbag2_bagfile_information']
+            topic_of_interest = self.config['topics_with_message_count'][1]['topic_metadata']['name']
+            self.get_logger().info(topic_of_interest)
+            self.image_subscriber = self.create_subscription(msg.Image, 
+                                                        topic_of_interest,
+                                                        self.image_callback, 
+                                                        10)
+        except FileNotFoundError as e: 
+            self.image_subscriber = self.create_subscription(msg.Image, 
+                                                        '/camera/image_raw',
+                                                        self.image_callback, 
+                                                        10)
+        
     
         ## Step 1: Model initialisation and model loading 
         self.model = DetectMultiBackend(self.weights, self.device)
         self.stride, self.names, self.pt = self.model.stride, self.model.names, self.model.pt
         ## Build a subscriber node to Image stream
         self.cv_bridge = CvBridge()
-        # self.image_subscriber = self.create_subscription(msg.Image, 
-        #                                                 '/camera/image_raw',
-        #                                                 self.image_callback, 
-        #                                                 10)
-        self.image_subscriber = self.create_subscription(msg.Image, 
-                                                        topic_of_interest,
-                                                        self.image_callback, 
-                                                        10)
-
+     
 
         self.image_publisher_viz =  self.create_publisher(msg.Image, 
                                                         '/bbox/viz',
