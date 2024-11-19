@@ -1,0 +1,93 @@
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1098.jpg 70,293,448,414,0 261,217,331,239,0 395,255,440,286,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/511.jpg 0,66,182,173,0 200,176,230,212,0 228,188,259,215,0 230,337,273,364,0 271,309,294,333,0 253,197,273,220,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/918.jpg 121,260,224,288,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1247.jpg 182,161,337,247,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/748.jpg 167,81,419,243,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/844.jpg 58,326,305,424,0 256,209,562,386,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1970.jpg 302,100,379,136,0 300,117,373,148,0 93,116,475,292,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/402.jpg 1,1,213,73,0 312,285,356,374,0 225,38,320,107,0 341,90,380,133,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/859.jpg 148,246,430,358,0 1,193,129,301,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1960.jpg 154,307,465,433,0 196,21,270,62,0 202,36,274,72,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/102.jpg 382,199,406,214,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1282.jpg 126,96,293,150,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1607.jpg 51,5,502,277,0 98,73,495,309,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1776.jpg 342,45,587,290,0 35,213,423,405,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/443.jpg 38,333,61,364,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1493.jpg 323,200,473,275,0 199,342,544,453,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/144.jpg 358,370,415,416,0 270,100,331,133,0 329,30,414,74,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/528.jpg 103,117,449,246,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1288.jpg 78,1,562,177,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1795.jpg 11,193,100,224,0 127,172,207,200,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1387.jpg 172,159,507,322,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/251.jpg 173,296,259,415,0 1,379,175,416,0 254,253,319,315,0 264,18,306,65,0 297,50,328,93,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/864.jpg 75,131,326,228,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/218.jpg 0,181,28,236,0 41,216,117,251,0 47,89,123,116,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/517.jpg 256,238,305,251,0 318,238,373,253,0 122,224,159,238,0 179,253,229,272,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1950.jpg 80,320,203,373,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1160.jpg 457,85,498,108,0 368,60,409,84,0 122,91,487,228,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1120.jpg 90,63,394,253,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1166.jpg 126,140,496,243,0 236,119,309,133,0 236,134,309,146,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1182.jpg 83,161,304,253,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1294.jpg 43,100,215,247,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1868.jpg 217,265,477,381,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/464.jpg 196,244,246,259,0 262,230,307,242,0 315,229,370,241,0 137,218,170,233,0 376,232,414,245,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1759.jpg 107,187,347,297,0 43,236,351,362,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1322.jpg 129,166,195,196,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/59.jpg 286,281,366,356,0 233,249,282,304,0 392,336,416,416,0 184,222,209,246,0 163,208,184,231,0 43,235,74,247,0 14,257,54,275,0 0,270,29,290,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/322.jpg 114,228,223,272,0 109,302,225,354,0 0,103,24,158,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/503.jpg 0,178,36,222,0 293,240,317,252,0 102,198,156,233,0 157,208,204,227,0 207,212,231,228,0 238,219,251,230,0 396,279,415,304,0 366,268,381,283,0 278,243,295,253,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/372.jpg 252,262,309,323,0 214,235,248,272,0 191,218,219,252,0 169,207,185,230,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1134.jpg 198,250,480,367,0 498,203,637,314,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1682.jpg 151,33,532,195,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/432.jpg 298,261,351,272,0 301,235,349,245,0 377,272,405,304,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1045.jpg 357,242,449,297,0 301,224,365,260,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/2063.jpg 334,1,429,35,0 329,5,426,51,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1171.jpg 134,285,279,464,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/2019.jpg 37,167,208,223,0 217,211,469,285,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1065.jpg 35,281,112,320,0 11,306,39,329,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1675.jpg 166,149,263,198,0 180,181,363,288,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1856.jpg 304,112,504,232,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1040.jpg 189,318,466,461,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1774.jpg 367,128,403,144,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1369.jpg 66,76,470,175,0 465,80,577,144,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/877.jpg 25,72,128,141,0 116,288,325,398,0 349,316,571,455,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/2046.jpg 198,42,440,88,0 206,86,435,121,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/946.jpg 1,239,23,252,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/374.jpg 264,267,313,315,0 144,237,217,267,0 221,230,263,276,0 324,309,416,406,0 145,196,217,219,0 317,240,386,295,0 267,34,325,62,0 315,15,407,49,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/382.jpg 133,190,199,208,0 70,188,130,203,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/653.jpg 270,165,446,471,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/253.jpg 228,289,269,310,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1853.jpg 263,59,434,150,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1173.jpg 330,193,553,279,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/72.jpg 36,125,58,169,0 12,121,36,159,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1615.jpg 286,219,437,297,0 167,359,505,429,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1095.jpg 1,229,45,251,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/832.jpg 129,236,446,449,0 73,150,264,268,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/557.jpg 206,212,370,263,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/626.jpg 143,342,537,439,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1248.jpg 382,250,542,316,0 214,89,257,107,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1968.jpg 460,119,597,343,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1289.jpg 216,149,526,381,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1611.jpg 136,1,377,86,0 144,36,371,120,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/570.jpg 191,1,518,253,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1861.jpg 66,174,445,279,0 80,235,439,327,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1574.jpg 195,243,317,314,0 300,208,386,264,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/640.jpg 206,156,597,447,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/529.jpg 117,1,453,100,0 153,45,428,153,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1269.jpg 193,170,321,215,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1664.jpg 329,2,427,31,0 325,10,423,47,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1613.jpg 36,278,264,423,0 356,293,633,467,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/182.jpg 91,308,134,325,0 139,302,180,317,0 194,295,233,311,0 0,326,10,416,0 118,114,162,130,0 167,113,210,126,0 84,151,129,165,0 89,170,123,184,0 85,201,128,213,0 94,226,132,239,0 88,242,136,256,0 95,269,127,284,0 35,163,77,174,0 36,175,72,199,0 39,218,72,230,0 37,243,82,255,0 40,262,78,273,0 40,277,79,289,0 43,292,76,303,0 2,165,27,177,0 35,6,65,24,0 35,26,70,53,0 32,57,77,82,0 31,85,69,109,0 3,7,25,28,0 0,46,27,71,0 0,74,29,97,0 0,100,33,139,0 32,112,81,131,0 -7,303,37,331,0 0,251,26,277,0 1,276,31,305,0 0,220,23,247,0 -3,194,28,216,0 130,104,190,115,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/825.jpg 210,233,383,332,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/419.jpg 1,0,62,107,0 228,124,286,190,0 280,148,322,204,0 294,335,334,378,0 84,50,212,165,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/486.jpg 26,158,56,181,0 0,168,26,184,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/920.jpg 346,28,581,139,0 192,112,511,285,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/364.jpg 57,129,131,142,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1841.jpg 197,225,514,438,0 86,229,277,347,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/501.jpg 333,389,415,416,0 248,272,271,283,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/969.jpg 230,250,416,336,0 361,234,411,266,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1411.jpg 325,264,475,327,0 1,252,330,461,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1078.jpg 390,112,513,166,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/543.jpg 97,67,447,202,0 109,117,427,244,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/1041.jpg 151,57,387,157,0
+/home/splion360/Desktop/project/peer-robotics-assignment/archives/yolov3/utils/../data/imgs/818.jpg 446,332,597,413,0 161,308,363,373,0 57,128,168,164,0

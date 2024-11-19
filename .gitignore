@@ -2,3 +2,11 @@ bbox/bbox/weights/*
 seg/seg/weights/*
 seg/seg/bag/*
 bbox/bbox/bag/*
+seg/object-segmentation/data/*
+seg/object-segmentation/weights/*
+seg/object-segmentation/wandb/*
+bbox/object-detection/data/*
+bbox/object-detection/yolov3-custom/weight/*
+bbox/object-detection/yolov3-custom/wandb/*
+bbox/object-detection/yolov3-custom/data/*
+bbox/object-detection/yolov3-custom/*.ipynb
