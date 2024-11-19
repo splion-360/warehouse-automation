@@ -1,7 +1,7 @@
 import torch
 
 
-WEIGHT_PATH = "src/seg/seg/weights"
+ROOT = "src/seg/seg/"
 IMG = {"IN_CHANNELS" : 3, 
        "OUT_CHANNELS": 1,
        "HEIGHT" : 416,

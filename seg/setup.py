@@ -25,7 +25,8 @@ setup(
     entry_points={
         'console_scripts': [
             'segment=seg.detect:main',
-            'video=seg.camera:main', 
+            'video=seg.camera:main',
+  
         ],
     },
 )

@@ -5,6 +5,8 @@ from cv_bridge import CvBridge
 import numpy as np
 import torch
 import time
+import yaml
+import os
 from bbox.models.common import DetectMultiBackend
 from bbox.utils.general import non_max_suppression, scale_boxes
 from bbox.utils.augmentations import letterbox
@@ -12,12 +14,19 @@ import bbox.yolov3_config_voc as cfg
 from bbox.visualize import visualize_boxes
 
 
+## Get the path info from yaml 
+def load_config(cfg_file : str):
+    with open(cfg_file, 'r') as file:
+        config = yaml.load(file, Loader=yaml.FullLoader)
+    return config
+
+
 class ObjectDetection(Node):
     def __init__(self, name = 'bounding_box'):
         super().__init__(name)
         rclpy.logging.set_logger_level(name, rclpy.logging.LoggingSeverity.INFO)
-
-        self.weights = cfg.DATA["WEIGHT_PATH"]
+        self.config = load_config(os.path.join(cfg.ROOT, 'bag/metadata.yaml'))['rosbag2_bagfile_information']
+        self.weights = os.path.join(cfg.ROOT, 'weights', 'best.pt')
         self.device  = cfg.DATA["DEVICE"]
         self.imgsz   = cfg.DATA["IMG_SIZE"]
         self.conf    = cfg.TEST["CONF_THRESH"]
@@ -25,16 +34,23 @@ class ObjectDetection(Node):
         self.classes = cfg.DATA["CLASSES"]
         self.agnostic_nms = False
         self.max_det = cfg.TEST["MAX_DET"]
+        topic_of_interest = self.config['topics_with_message_count'][1]['topic_metadata']['name']
+        self.get_logger().info(topic_of_interest)
     
         ## Step 1: Model initialisation and model loading 
         self.model = DetectMultiBackend(self.weights, self.device)
         self.stride, self.names, self.pt = self.model.stride, self.model.names, self.model.pt
         ## Build a subscriber node to Image stream
         self.cv_bridge = CvBridge()
+        # self.image_subscriber = self.create_subscription(msg.Image, 
+        #                                                 '/camera/image_raw',
+        #                                                 self.image_callback, 
+        #                                                 10)
         self.image_subscriber = self.create_subscription(msg.Image, 
-                                                        '/camera/image_raw',
+                                                        topic_of_interest,
                                                         self.image_callback, 
                                                         10)
+
 
         self.image_publisher_viz =  self.create_publisher(msg.Image, 
                                                         '/bbox/viz',
