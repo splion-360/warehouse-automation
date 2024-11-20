@@ -11,8 +11,8 @@ The second task required detecting warehouse pallets in the scene, with focus on
 |mAP@50:95:0.05|44|33|
 
 ## Installation
-For the purpose of this assignment, I have setup ROS2 nodes with provisions for inferencing using webcam and rosbag. To get started, make sure you have ROS2 (*ROS2-foxy Ubuntu 20.04 LTS*) installed in your system and install the necessary python modules to run the inference node. To infer on ros bag, place the extracted file (.db3 and yaml) inside the `bbox/bag` directory.
-
+For the purpose of this assignment, I have setup ROS2 nodes with provisions for inferencing using webcam and rosbag. To get started, make sure you have ROS2 (*ROS2-foxy Ubuntu 20.04 LTS*) installed in your system and install the necessary python modules to run the inference node. To infer on ros bag, place the extracted file (.db3 and yaml) inside the `bbox/bag` directory and
+update the name accordingly inside the launch file.
 <br>
 
 ```
