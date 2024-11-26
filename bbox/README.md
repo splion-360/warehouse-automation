@@ -26,7 +26,7 @@ source /opt/ros/foxy/setup.bash
 ## Create a ROS2 workspace as follows 
 mkdir -p ros2_ws/src
 cd ros2_ws/src 
-git clone https://github.com/splion-360/peer-robotics.git
+git clone https://github.com/splion-360/peer-robotics.git .
 cd ..
 colcon build 
 
