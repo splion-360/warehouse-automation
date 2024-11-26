@@ -23,21 +23,15 @@ class ObjectSegmentation(Node):
     def __init__(self, name = "semantic_segmentation"):
         super().__init__(name)
         rclpy.logging.set_logger_level('semantic_segmentation', rclpy.logging.LoggingSeverity.INFO)
-        try:
-            self.config = load_config(os.path.join(cfg.ROOT, 'bag/metadata.yaml'))['rosbag2_bagfile_information']
-            topic_of_interest = self.config['topics_with_message_count'][1]['topic_metadata']['name']
-            self.get_logger().info(topic_of_interest)
-            self.image_subscriber = self.create_subscription(Image, 
-                                                         topic_of_interest,
+        
+        topic_of_interest = "/robot1/zed2i/left/image_rect_color"
+        self.get_logger().info(topic_of_interest)
+        self.image_subscriber = self.create_subscription(Image, 
+                                                        topic_of_interest,
                                                         self.image_callback, 
                                                         10)
-        
-        except FileNotFoundError as e: 
-            self.get_logger().info("ROS bag file not found !! Using webcam instead...")
-            self.image_subscriber = self.create_subscription(Image, 
-                                                    '/camera/image_raw',
-                                                    self.image_callback, 
-                                                    10)
+    
+
         weights_path = os.path.join(cfg.ROOT, 'weights')
         self.device = cfg.DEVICE
         

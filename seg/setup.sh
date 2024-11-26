@@ -2,7 +2,7 @@
 
 ## Create necessary folders 
 mkdir -p seg/weights
-mkdir -p seg/bag
+
 
 
 ## Download the weights for performing binary segmentation on the images

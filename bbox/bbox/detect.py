@@ -34,19 +34,12 @@ class ObjectDetection(Node):
         self.agnostic_nms = False
         self.max_det = cfg.TEST["MAX_DET"]
 
-        try: 
-            self.config = load_config(os.path.join(cfg.ROOT, 'bag/metadata.yaml'))['rosbag2_bagfile_information']
-            topic_of_interest = self.config['topics_with_message_count'][1]['topic_metadata']['name']
-            self.get_logger().info(topic_of_interest)
-            self.image_subscriber = self.create_subscription(msg.Image, 
-                                                        topic_of_interest,
-                                                        self.image_callback, 
-                                                        10)
-        except FileNotFoundError as e: 
-            self.image_subscriber = self.create_subscription(msg.Image, 
-                                                        '/camera/image_raw',
-                                                        self.image_callback, 
-                                                        10)
+        topic_of_interest = "/robot1/zed2i/left/image_rect_color"
+        self.get_logger().info(topic_of_interest)
+        self.image_subscriber = self.create_subscription(msg.Image, 
+                                                    topic_of_interest,
+                                                    self.image_callback, 
+                                                    10)
         
     
         ## Step 1: Model initialisation and model loading 
