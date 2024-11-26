@@ -6,6 +6,9 @@ The objective of this assignment is to perform real-time image segmentation and 
 - [Bounding Box inference](./bbox/README.md)  
 - [Semantic Segmentation inference](./seg/README.md)
 
+## Download the weights
+- yolov3 (416 X 416) - [here](https://drive.google.com/file/d/13NHccIt-mt-Jmsx1Dwe34q1tS3qJwaCS/view?usp=sharing)
+- segnet (416 X 416) - [here](https://drive.google.com/file/d/1V0Ax7RgARmh00KV3CjMrs1TXdk3zrDib/view?usp=sharing) 
 
 <!-- ## Custom Training 
 ### Segmentation
