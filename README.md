@@ -11,7 +11,7 @@ The objective of this assignment is to perform real-time image segmentation and 
 - segnet (416 X 416) - [here](https://drive.google.com/file/d/1V0Ax7RgARmh00KV3CjMrs1TXdk3zrDib/view?usp=sharing) 
 
 
-# Docker Installation 
+## Docker Installation 
 ### Build
 Make sure you have the docker engine installed in your system. Once installed, you can build the image using `docker image build`. 
 
