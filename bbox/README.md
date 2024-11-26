@@ -11,6 +11,7 @@ The second task required detecting warehouse pallets in the scene, with focus on
 |mAP@50:95:0.05|44|33|
 
 ## Installation
+### `NOTE:` You can skip this section and move to the next if you are working with Docker container
 For the purpose of this assignment, I have setup ROS2 nodes with provisions for inferencing using webcam and rosbag. To get started, make sure you have ROS2 (*ROS2-foxy Ubuntu 20.04 LTS*) installed in your system and install the necessary python modules to run the inference node. To infer on ros bag, place the extracted file (.db3 and yaml) inside the `bbox/bag` directory and
 update the name accordingly inside the launch file.
 <br>
@@ -38,6 +39,7 @@ cd ros2_ws/src/bbox
 
 ## Download weights 
 Navigate to the `src/bbox/bbox/weights` folder and place the pretrained weights. The weights can be downloaded [here](https://drive.google.com/file/d/13NHccIt-mt-Jmsx1Dwe34q1tS3qJwaCS/view?usp=sharing)
+`NOTE`: If using a containerized environment, make sure to place the weights in the respective folders within the container
 
 
 

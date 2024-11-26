@@ -12,9 +12,10 @@ The first task was binary segmentation of the warehouse floor from the backgroun
 |dice score|88|81|
 |IoU|83.5| 76.4|
 
-## Installation
+## Installation 
+### `NOTE:` You can skip this section and move to the next if you are working with Docker container
 For the purpose of this assignment, I have setup ROS2 nodes with provisions for inferencing using webcam and rosbag. To get started, make sure you have ROS2 (*ROS2-foxy Ubuntu 20.04 LTS*) installed in your system and install the necessary python modules to run the inference node. To infer on ros bag, place the extracted file (.db3 and yaml) inside the `seg/bag` directory and update the name accordingly inside the launch file. 
-
+`
 <br>
 
 ```
@@ -39,8 +40,8 @@ cd src/seg
 ```
 
 ## Download weights 
-Navigate to the `src/seg/seg/weights` folder and place the pretrained weights. The weights can be downloaded [here](https://drive.google.com/file/d/1V0Ax7RgARmh00KV3CjMrs1TXdk3zrDib/view?usp=sharing) 
-
+Navigate to the `src/seg/seg/weights` folder and place the pretrained weights. The weights can be downloaded [here](https://drive.google.com/file/d/1V0Ax7RgARmh00KV3CjMrs1TXdk3zrDib/view?usp=sharing).
+`NOTE`: If using a containerized environment, make sure to place the weights in the respective folders within the container
 ## Inference
 Once the model weights are downloaded, navigate to the root of the workspace and launch the ROS2 nodes. 
 ```

@@ -10,21 +10,27 @@ The objective of this assignment is to perform real-time image segmentation and 
 - yolov3 (416 X 416) - [here](https://drive.google.com/file/d/13NHccIt-mt-Jmsx1Dwe34q1tS3qJwaCS/view?usp=sharing)
 - segnet (416 X 416) - [here](https://drive.google.com/file/d/1V0Ax7RgARmh00KV3CjMrs1TXdk3zrDib/view?usp=sharing) 
 
-<!-- ## Custom Training 
-### Segmentation
-The repo contains scripts to reproduce results and to perform training on custom dataset. To get started, 
+
+# Docker Installation 
+### Build
+Make sure you have the docker engine installed in your system. Once installed, you can build the image using `docker image build`. 
 
 ```
-## Clone the repo 
-git clone https://github.com/splion-360/peer-robotics.git
-./setup.sh
-python train.py
+# Create a new directory
+mkdir project-docker
+
+# Place the dockerfile inside this directory and run
+docker image build -t build project dockerfile.Dockerfile
+
+```
+## Run 
+```
+# Local port forwarding for RViz visualisation
+xhost local:root
+
+# Run the docker container
+docker run -it --network=host --ipc=host -v /tmp/.X11-unix:/tmp.X11-umix:rw --env DISPLAY --privileged --gpus all project
 ```
 
-`NOTE: The setup is still incomplete and will try to push the changes ASAP`
-### Bounding box
-Two implementations of Yolov3 is contained inside the `object-detection` folder. One is my custom implementation from scratch and the other one is forked from [here](https://github.com/ultralytics/yolov3). 
-```
-TODO: to be filled later
-```
-`NOTE: The setup is still incomplete and will try to push the changes ASAP` -->
+Once inside the container, follow the steps mentioned in 
+[bbox inference](./bbox/README.md) and [segmentation inference](./seg/README.md) before launching the inference nodes. 
