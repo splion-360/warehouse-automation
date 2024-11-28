@@ -13,7 +13,7 @@ The first task was binary segmentation of the warehouse floor from the backgroun
 |IoU|83.5| 76.4|
 
 ## Installation 
-### `NOTE:` You can skip this section and move to [inference](#inference) if you are working with Docker container
+#### `NOTE:` You can skip this section and move to [inference](#inference) if you are working with Docker container
 For the purpose of this assignment, I have setup ROS2 nodes with provisions for inferencing using webcam and rosbag. To get started, make sure you have ROS2 (*ROS2-foxy Ubuntu 20.04 LTS*) installed in your system and install the necessary python modules to run the inference node. To infer on ros bag, place the extracted file (.db3 and yaml) inside the `seg/bag` directory and update the name accordingly inside the launch file. 
 `
 <br>
