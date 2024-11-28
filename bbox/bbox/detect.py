@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 import sensor_msgs.msg as msg
+import cv2
 from cv_bridge import CvBridge
 import numpy as np
 import torch
