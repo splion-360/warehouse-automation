@@ -16,11 +16,12 @@ The objective of this assignment is to perform real-time image segmentation and 
 Make sure you have the docker engine installed in your system. Once installed, you can build the image using `docker image build`. 
 
 ```
-# Create a new directory
-mkdir project-docker
+# Before proceeding, download the model weights,
+#   1) Save the SegNet weight inside /docker as /docker/best_segnet.pt
+#   2) Save the  YOLOv3 weight inside /docker as /docker/best_bbox.pt
+#   3) Place the rosbag files inside /docker
 
-# Place the dockerfile inside this directory and run
-docker image build -t build project dockerfile.Dockerfile
+docker image build -t build <IMAGE-NAME> .
 
 ```
 ## Run 
