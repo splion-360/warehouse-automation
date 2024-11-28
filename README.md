@@ -21,7 +21,7 @@ Make sure you have the docker engine installed in your system. Once installed, y
 #   2) Save the  YOLOv3 weight inside /docker as /docker/best_bbox.pt
 #   3) Place the rosbag files inside /docker
 
-docker image build -t build <IMAGE-NAME> .
+docker image build -t <IMAGE-NAME> .
 
 ```
 ## Run 
