@@ -1,4 +1,4 @@
-# Assignment - Peer Robotics
+# Automation of warehouse pick and place tasks (Perception)
 The objective of this assignment is to perform real-time image segmentation and obstacle detection using Deep Neural Networks. Dataset annotations were generated through a hybrid approach. Initially, labels (masks and bounding boxes) were predicted in a zero-shot manner using [Grounding DINO](https://github.com/IDEA-Research/GroundingDINO) and [Grounding SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything). The quality of these predictions was then manually reviewed to ensure accuracy for training. Once the annotations were finalized, the necessary models were trained, and their weights were saved in the respective folders (bbox for bounding boxes and seg for segmentation). To test the network's functionality, you can proceed directly to the inference steps.
 
 <br>
